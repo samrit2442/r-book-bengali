@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Computing in Bengali",
+    "section": "",
+    "text": "R Computing বই নিয়ে কিছু কথা\nবাংলা ভাষায় R Programming Language নিয়ে কখনও কোন বই সেভাবে লেখা হয়নি। তাই Kolkata R UseR Group প্রতিষ্ঠিত হবার পর থেকেই এই ব্যাপারে কাজ করতে আগ্রহ প্রকাশ করি।"
+  },
+  {
+    "objectID": "intro.html#r-ক",
+    "href": "intro.html#r-ক",
+    "title": "1  সূচনা",
+    "section": "1.1 R কি?",
+    "text": "1.1 R কি?\nR হল একটা"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  }
+]
