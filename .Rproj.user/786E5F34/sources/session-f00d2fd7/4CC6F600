@@ -3,7 +3,7 @@
     "path": "~/R_Projects/r-book-bengali/intro.qmd",
     "project_path": "intro.qmd",
     "type": "quarto_markdown",
-    "hash": "2468035355",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1710879290952.0,
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "26:0",
+        "rmdVisualModeLocation": "13:0",
         "cursorPosition": "2,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710879379,
+    "lastKnownWriteTime": 1710880029,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710879379736,
+    "last_content_update": 1710880029671,
     "read_only": false,
     "read_only_alternatives": []
 }

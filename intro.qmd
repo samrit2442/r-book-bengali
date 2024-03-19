@@ -2,4 +2,4 @@
 
 ## R কি?
 
-R হল একটা
+R হল একটা Statistical কম্পিউটারগ্রাহ্য ভাষা (computer language).
