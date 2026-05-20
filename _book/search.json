@@ -54,7 +54,7 @@
     "href": "chapters/02-data-structures.html",
     "title": "3  ডেটা স্ট্রাকচার",
     "section": "",
-    "text": "3.1 ভেক্টর (Vectors)\nR প্রোগ্রামিংয়ে মূলত চারটি പ്രധാന ডেটা স্ট্রাকচার ব্যবহৃত হয়: ভেক্টর, লিস্ট, ম্যাট্রিক্স এবং ডেটা ফ্রেম।\nভেক্টর হল একই ধরণের ডেটার একটি সংগ্রহ। c() ফাংশন ব্যবহার করে ভেক্টর তৈরি করা যায়।\n# সংখ্যার ভেক্টর\nnumbers &lt;- c(1, 2, 3, 4, 5)\nprint(numbers)\n\n[1] 1 2 3 4 5\n\n# স্ট্রিং ভেক্টর\nfruits &lt;- c(\"Apple\", \"Banana\", \"Mango\")\nprint(fruits)\n\n[1] \"Apple\"  \"Banana\" \"Mango\"",
+    "text": "3.1 ভেক্টর (Vectors)\nR প্রোগ্রামিংয়ে মূলত চার প্রকারের ডেটা স্ট্রাকচার ব্যবহৃত হয়: ভেক্টর, লিস্ট, ম্যাট্রিক্স এবং ডেটা ফ্রেম।\nভেক্টর হলো একই প্রকারের ডেটার একটি সংগ্রহ। c() ফাংশন ব্যবহার করে ভেক্টর তৈরি করা যায়।\n# সংখ্যার ভেক্টর\nnumbers &lt;- c(1, 2, 3, 4, 5)\nprint(numbers)\n\n[1] 1 2 3 4 5\n\n# স্ট্রিং ভেক্টর\nfruits &lt;- c(\"Apple\", \"Banana\", \"Mango\")\nprint(fruits)\n\n[1] \"Apple\"  \"Banana\" \"Mango\"",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
     ]
@@ -64,7 +64,7 @@
     "href": "chapters/02-data-structures.html#লসট-lists",
     "title": "3  ডেটা স্ট্রাকচার",
     "section": "3.2 লিস্ট (Lists)",
-    "text": "3.2 লিস্ট (Lists)\nলিস্ট হল বিভিন্ন ধরণের ডেটার সংগ্রহ। একটি লিস্টের মধ্যে সংখ্যা, স্ট্রিং, এমনকী অন্যান্য ভেক্টর বা লিস্টও থাকতে পারে।\n\nmy_list &lt;- list(name = \"Rahim\", age = 25, scores = c(80, 85, 90))\nprint(my_list)\n\n$name\n[1] \"Rahim\"\n\n$age\n[1] 25\n\n$scores\n[1] 80 85 90",
+    "text": "3.2 লিস্ট (Lists)\nলিস্ট হল বিভিন্ন প্রকারের ডেটার সংগ্রহ। একটি লিস্টের মধ্যে সংখ্যা, স্ট্রিং, এমনকী অন্যান্য ভেক্টর বা লিস্টও থাকতে পারে।\n\nmy_list &lt;- list(name = \"Rahim\", age = 25, scores = c(80, 85, 90))\nprint(my_list)\n\n$name\n[1] \"Rahim\"\n\n$age\n[1] 25\n\n$scores\n[1] 80 85 90",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
     ]
