@@ -21,6 +21,9 @@ format:
   html:
     theme: cosmo
   pdf:
+    pdf-engine: xelatex
+    mainfont: "Kalpurush"
+    monofont: "Kalpurush"
     documentclass: scrreprt
 
 editor: visual

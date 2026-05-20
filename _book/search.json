@@ -10,8 +10,8 @@
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
+    "objectID": "chapters/intro.html",
+    "href": "chapters/intro.html",
     "title": "1  সূচনা",
     "section": "",
     "text": "1.1 R কি?\nR হল একটা Statistical কম্পিউটারগ্রাহ্য ভাষা (computer language). Python এর মত এটাও একটি High Level Programming Language.",
@@ -20,13 +20,173 @@
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
+    "objectID": "chapters/01-basics.html",
+    "href": "chapters/01-basics.html",
+    "title": "2  R এর প্রাথমিক ধারণা",
+    "section": "",
+    "text": "2.1 ইনস্টলেশন\nR প্রোগ্রামিং ভাষা পরিসংখ্যান ও ডেটা সায়েন্সের জন্য একটি অত্যন্ত জনপ্রিয় ভাষা। এই অধ্যায়ে আমরা R-এর প্রাথমিক বিষয়গুলো নিয়ে আলোচনা করব।\nR ব্যবহার করার জন্য আপনাকে আপনার কম্পিউটারে R এবং RStudio ইনস্টল করতে হবে: - R: CRAN ওয়েবসাইট থেকে ডাউনলোড করতে পারবেন। - RStudio: এটি একটি IDE যা R ব্যবহারে সহায়তা করে। Posit থেকে ডাউনলোড করুন।",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R এর প্রাথমিক ধারণা</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-basics.html#কনসল-এব-ভরযবল",
+    "href": "chapters/01-basics.html#কনসল-এব-ভরযবল",
+    "title": "2  R এর প্রাথমিক ধারণা",
+    "section": "2.2 কনসোল এবং ভেরিয়েবল",
+    "text": "2.2 কনসোল এবং ভেরিয়েবল\nR কনসোল হল সেই জায়গা যেখানে আপনি সরাসরি কোড লিখে চালাতে পারেন।\n\n# এটি একটি কমেন্ট\nx &lt;- 10\ny &lt;- 5\nz &lt;- x + y\nprint(z)\n\n[1] 15\n\n\nএখানে &lt;- অপারেটরটি ভেরিয়েবলে মান অ্যাসাইন করার জন্য ব্যবহৃত হয়। print() ফাংশন ফলাফল কনসোলে দেখায়।",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R এর প্রাথমিক ধারণা</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-basics.html#গণতক-কজ",
+    "href": "chapters/01-basics.html#গণতক-কজ",
+    "title": "2  R এর প্রাথমিক ধারণা",
+    "section": "2.3 গাণিতিক কাজ",
+    "text": "2.3 গাণিতিক কাজ\nR-এ সাধারণ গাণিতিক কাজগুলো খুব সহজেই করা যায়:\n\n5 + 3   # যোগ\n\n[1] 8\n\n10 - 2  # বিয়োগ\n\n[1] 8\n\n4 * 5   # গুণ\n\n[1] 20\n\n20 / 4  # ভাগ\n\n[1] 5\n\n2^3     # সূচক (Power)\n\n[1] 8",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R এর প্রাথমিক ধারণা</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-data-structures.html",
+    "href": "chapters/02-data-structures.html",
+    "title": "3  ডেটা স্ট্রাকচার",
+    "section": "",
+    "text": "3.1 ভেক্টর (Vectors)\nR প্রোগ্রামিংয়ে মূলত চারটি പ്രധാന ডেটা স্ট্রাকচার ব্যবহৃত হয়: ভেক্টর, লিস্ট, ম্যাট্রিক্স এবং ডেটা ফ্রেম।\nভেক্টর হল একই ধরণের ডেটার একটি সংগ্রহ। c() ফাংশন ব্যবহার করে ভেক্টর তৈরি করা যায়।\n# সংখ্যার ভেক্টর\nnumbers &lt;- c(1, 2, 3, 4, 5)\nprint(numbers)\n\n[1] 1 2 3 4 5\n\n# স্ট্রিং ভেক্টর\nfruits &lt;- c(\"Apple\", \"Banana\", \"Mango\")\nprint(fruits)\n\n[1] \"Apple\"  \"Banana\" \"Mango\"",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-data-structures.html#লসট-lists",
+    "href": "chapters/02-data-structures.html#লসট-lists",
+    "title": "3  ডেটা স্ট্রাকচার",
+    "section": "3.2 লিস্ট (Lists)",
+    "text": "3.2 লিস্ট (Lists)\nলিস্ট হল বিভিন্ন ধরণের ডেটার সংগ্রহ। একটি লিস্টের মধ্যে সংখ্যা, স্ট্রিং, এমনকী অন্যান্য ভেক্টর বা লিস্টও থাকতে পারে।\n\nmy_list &lt;- list(name = \"Rahim\", age = 25, scores = c(80, 85, 90))\nprint(my_list)\n\n$name\n[1] \"Rahim\"\n\n$age\n[1] 25\n\n$scores\n[1] 80 85 90",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-data-structures.html#মযটরকস-matrices",
+    "href": "chapters/02-data-structures.html#মযটরকস-matrices",
+    "title": "3  ডেটা স্ট্রাকচার",
+    "section": "3.3 ম্যাট্রিক্স (Matrices)",
+    "text": "3.3 ম্যাট্রিক্স (Matrices)\nম্যাট্রিক্স হল 2D (দ্বিমাত্রিক) ডেটা স্ট্রাকচার।\n\n# 2 সারি এবং 3 কলামের ম্যাট্রিক্স\nmy_matrix &lt;- matrix(1:6, nrow = 2, ncol = 3)\nprint(my_matrix)\n\n     [,1] [,2] [,3]\n[1,]    1    3    5\n[2,]    2    4    6",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-data-structures.html#ডট-ফরম-data-frames",
+    "href": "chapters/02-data-structures.html#ডট-ফরম-data-frames",
+    "title": "3  ডেটা স্ট্রাকচার",
+    "section": "3.4 ডেটা ফ্রেম (Data Frames)",
+    "text": "3.4 ডেটা ফ্রেম (Data Frames)\nডেটা সায়েন্সে ডেটা ফ্রেম সবচেয়ে বেশি ব্যবহৃত হয়। এটি অনেকটা এক্সেল টেবিলের মতো, যেখানে বিভিন্ন কলামে বিভিন্ন ধরনের ডেটা থাকতে পারে।\n\ndf &lt;- data.frame(\n  ID = c(1, 2, 3),\n  Name = c(\"Karim\", \"Rahim\", \"Salma\"),\n  Age = c(22, 25, 23)\n)\nprint(df)\n\n  ID  Name Age\n1  1 Karim  22\n2  2 Rahim  25\n3  3 Salma  23",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-data-manipulation.html",
+    "href": "chapters/03-data-manipulation.html",
+    "title": "4  ডেটা ম্যানিপুলেশন",
+    "section": "",
+    "text": "4.1 dplyr প্যাকেজ\nডেটা বিশ্লেষণ করার জন্য ডেটাকে পরিষ্কার ও সাজানো অত্যন্ত গুরুত্বপূর্ণ। R-এ ডেটা ম্যানিপুলেশনের জন্য dplyr প্যাকেজটি ব্যাপকভাবে ব্যবহৃত হয়।\nপ্রথমত, আমাদের প্যাকেজটি ইনস্টল ও লোড করতে হবে:\n# install.packages(\"dplyr\") # প্রথমবার হলে এটি রান করতে হবে\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ডেটা ম্যানিপুলেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-data-manipulation.html#filter",
+    "href": "chapters/03-data-manipulation.html#filter",
+    "title": "4  ডেটা ম্যানিপুলেশন",
+    "section": "4.2 filter()",
+    "text": "4.2 filter()\nfilter() ফাংশন ব্যবহার করে ডেটা ফ্রেম থেকে নির্দিষ্ট শর্ত অনুযায়ী সারি (Rows) বেছে নেওয়া যায়।\n\n# একটি ডেমো ডেটাসেট তৈরি\ndata &lt;- data.frame(\n  Name = c(\"A\", \"B\", \"C\", \"D\"),\n  Age = c(20, 25, 30, 22),\n  Score = c(85, 90, 75, 88)\n)\n\n# বয়স ২৫ এর কম এমন রেকর্ডগুলি ফিল্টার করা\nyoung_people &lt;- filter(data, Age &lt; 25)\nprint(young_people)\n\n  Name Age Score\n1    A  20    85\n2    D  22    88",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ডেটা ম্যানিপুলেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-data-manipulation.html#select",
+    "href": "chapters/03-data-manipulation.html#select",
+    "title": "4  ডেটা ম্যানিপুলেশন",
+    "section": "4.3 select()",
+    "text": "4.3 select()\nselect() ফাংশন ব্যবহার করে ডেটা ফ্রেম থেকে নির্দিষ্ট কলাম বেছে নেওয়া যায়।\n\n# শুধুমাত্র Name এবং Score কলাম নির্বাচন করা\nname_score &lt;- select(data, Name, Score)\nprint(name_score)\n\n  Name Score\n1    A    85\n2    B    90\n3    C    75\n4    D    88",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ডেটা ম্যানিপুলেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-data-manipulation.html#mutate",
+    "href": "chapters/03-data-manipulation.html#mutate",
+    "title": "4  ডেটা ম্যানিপুলেশন",
+    "section": "4.4 mutate()",
+    "text": "4.4 mutate()\nmutate() ব্যবহার করে নতুন কলাম তৈরি বা পুরোনো কলামের মান পরিবর্তন করা যায়।\n\n# Score-এর সাথে ৫ যোগ করে নতুন কলাম তৈরি\nnew_data &lt;- mutate(data, New_Score = Score + 5)\nprint(new_data)\n\n  Name Age Score New_Score\n1    A  20    85        90\n2    B  25    90        95\n3    C  30    75        80\n4    D  22    88        93",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ডেটা ম্যানিপুলেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-data-manipulation.html#summarize",
+    "href": "chapters/03-data-manipulation.html#summarize",
+    "title": "4  ডেটা ম্যানিপুলেশন",
+    "section": "4.5 summarize()",
+    "text": "4.5 summarize()\nsummarize() ব্যবহার করে ডেটার সারাংশ (Summary) তৈরি করা যায়, যেমন গড়, যোগফল ইত্যাদি বের করা।\n\n# গড় Score বের করা\nsummary_data &lt;- summarize(data, Average_Score = mean(Score))\nprint(summary_data)\n\n  Average_Score\n1          84.5",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ডেটা ম্যানিপুলেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-data-visualization.html",
+    "href": "chapters/04-data-visualization.html",
+    "title": "5  ডেটা ভিজ্যুয়ালাইজেশন",
+    "section": "",
+    "text": "5.1 ggplot2 পরিচিতি\nডেটাকে সুন্দরভাবে এবং সহজভাবে উপস্থাপন করার জন্য ভিজ্যুয়ালাইজেশন খুবই গুরুত্বপূর্ণ। R-এ ডেটা ভিজ্যুয়ালাইজেশনের জন্য সবচেয়ে জনপ্রিয় প্যাকেজ হলো ggplot2।\nপ্রথমে ggplot2 প্যাকেজটি লোড করে নিতে হবে।\n# install.packages(\"ggplot2\")\nlibrary(ggplot2)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>ডেটা ভিজ্যুয়ালাইজেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-data-visualization.html#সকযটর-পলট-scatter-plot",
+    "href": "chapters/04-data-visualization.html#সকযটর-পলট-scatter-plot",
+    "title": "5  ডেটা ভিজ্যুয়ালাইজেশন",
+    "section": "5.2 স্ক্যাটার প্লট (Scatter Plot)",
+    "text": "5.2 স্ক্যাটার প্লট (Scatter Plot)\nদুটি নিউমেরিক ভেরিয়েবলের মধ্যে সম্পর্ক দেখার জন্য স্ক্যাটার প্লট ব্যবহার করা হয়। R-এর বিল্ট-ইন ডেটাসেট mtcars ব্যবহার করে আমরা একটি স্ক্যাটার প্লট তৈরি করব।\n\n# গাড়ির ওজন (wt) বনাম মাইলেজ (mpg)\nggplot(data = mtcars, aes(x = wt, y = mpg)) +\n  geom_point() +\n  labs(title = \"গাড়ির ওজন ও মাইলেজের সম্পর্ক\",\n       x = \"ওজন (1000 lbs)\",\n       y = \"মাইলেজ (Miles per Gallon)\")",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>ডেটা ভিজ্যুয়ালাইজেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-data-visualization.html#বর-চরট-bar-chart",
+    "href": "chapters/04-data-visualization.html#বর-চরট-bar-chart",
+    "title": "5  ডেটা ভিজ্যুয়ালাইজেশন",
+    "section": "5.3 বার চার্ট (Bar Chart)",
+    "text": "5.3 বার চার্ট (Bar Chart)\nক্যাটাগরিকাল ডেটা দেখানোর জন্য বার চার্ট বেশ উপকারী।\n\n# mtcars ডেটাসেটে কতগুলো 4, 6, ও 8 সিলিন্ডারের গাড়ি আছে তা দেখা\nggplot(data = mtcars, aes(x = factor(cyl))) +\n  geom_bar(fill = \"steelblue\") +\n  labs(title = \"সিলিন্ডার অনুযায়ী গাড়ির সংখ্যা\",\n       x = \"সিলিন্ডারের সংখ্যা\",\n       y = \"গাড়ির সংখ্যা\")",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>ডেটা ভিজ্যুয়ালাইজেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/04-data-visualization.html#লইন-চরট-line-chart",
+    "href": "chapters/04-data-visualization.html#লইন-চরট-line-chart",
+    "title": "5  ডেটা ভিজ্যুয়ালাইজেশন",
+    "section": "5.4 লাইন চার্ট (Line Chart)",
+    "text": "5.4 লাইন চার্ট (Line Chart)\nসময়ের সাথে ডেটার পরিবর্তন দেখানোর জন্য লাইন চার্ট ব্যবহার করা হয়।\n\n# বিল্ট-ইন economics ডেটাসেট ব্যবহার\nggplot(data = economics, aes(x = date, y = unemploy)) +\n  geom_line(color = \"red\") +\n  labs(title = \"সময়ের সাথে বেকারত্বের পরিবর্তন\",\n       x = \"বছর\",\n       y = \"বেকার সংখ্যা (হাজারে)\")",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>ডেটা ভিজ্যুয়ালাইজেশন</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/summary.html",
+    "href": "chapters/summary.html",
+    "title": "6  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Summary</span>"
     ]
   }
 ]

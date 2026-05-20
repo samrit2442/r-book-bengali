@@ -10,5 +10,26 @@
   },
   "references.qmd": {
     "references.html": "e587eeaf"
+  },
+  "chapters/intro.qmd": {
+    "intro.html": "3306c026"
+  },
+  "chapters/01-basics.qmd": {
+    "01-basics.html": "297de857"
+  },
+  "chapters/02-data-structures.qmd": {
+    "02-data-structures.html": "96162b74"
+  },
+  "chapters/03-data-manipulation.qmd": {
+    "03-data-manipulation.html": "35eafd2b"
+  },
+  "chapters/04-data-visualization.qmd": {
+    "04-data-visualization.html": "7485273c"
+  },
+  "chapters/summary.qmd": {
+    "summary.html": "509dee4f"
+  },
+  "chapters/references.qmd": {
+    "references.html": "2bd65876"
   }
 }
