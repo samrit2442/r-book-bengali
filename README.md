@@ -1,4 +1,4 @@
-# R Computing in Bengali 🇧🇩
+# R Computing in Bengali
 
 Welcome to the **R Computing in Bengali** project! This is an open-source initiative aimed at teaching the R programming language to Bengali speakers. By providing essential data science and programming concepts in Bengali, we hope to make learning R more accessible and enjoyable for students and professionals.
 
