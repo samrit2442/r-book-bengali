@@ -42,7 +42,7 @@ print(my_matrix)
 ```{r}
 df <- data.frame(
   ID = c(1, 2, 3),
-  Name = c("Karim", "Rahim", "Salma"),
+  Name = c("Nibiru", "Sourav", "Irabati"),
   Age = c(22, 25, 23)
 )
 print(df)
