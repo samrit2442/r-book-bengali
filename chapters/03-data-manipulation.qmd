@@ -1,0 +1,59 @@
+# ডেটা ম্যানিপুলেশন {#data-manipulation}
+
+ডেটা বিশ্লেষণ করার জন্য ডেটাকে পরিষ্কার ও সাজানো অত্যন্ত গুরুত্বপূর্ণ। R-এ ডেটা ম্যানিপুলেশনের জন্য `dplyr` প্যাকেজটি ব্যাপকভাবে ব্যবহৃত হয়।
+
+## `dplyr` প্যাকেজ
+
+প্রথমত, আমাদের প্যাকেজটি ইনস্টল ও লোড করতে হবে:
+
+```{r}
+# install.packages("dplyr") # প্রথমবার হলে এটি রান করতে হবে
+library(dplyr)
+```
+
+## `filter()`
+
+`filter()` ফাংশন ব্যবহার করে ডেটা ফ্রেম থেকে নির্দিষ্ট শর্ত অনুযায়ী সারি (Rows) বেছে নেওয়া যায়।
+
+```{r}
+# একটি ডেমো ডেটাসেট তৈরি
+data <- data.frame(
+  Name = c("A", "B", "C", "D"),
+  Age = c(20, 25, 30, 22),
+  Score = c(85, 90, 75, 88)
+)
+
+# বয়স ২৫ এর কম এমন রেকর্ডগুলি ফিল্টার করা
+young_people <- filter(data, Age < 25)
+print(young_people)
+```
+
+## `select()`
+
+`select()` ফাংশন ব্যবহার করে ডেটা ফ্রেম থেকে নির্দিষ্ট কলাম বেছে নেওয়া যায়।
+
+```{r}
+# শুধুমাত্র Name এবং Score কলাম নির্বাচন করা
+name_score <- select(data, Name, Score)
+print(name_score)
+```
+
+## `mutate()`
+
+`mutate()` ব্যবহার করে নতুন কলাম তৈরি বা পুরোনো কলামের মান পরিবর্তন করা যায়।
+
+```{r}
+# Score-এর সাথে ৫ যোগ করে নতুন কলাম তৈরি
+new_data <- mutate(data, New_Score = Score + 5)
+print(new_data)
+```
+
+## `summarize()`
+
+`summarize()` ব্যবহার করে ডেটার সারাংশ (Summary) তৈরি করা যায়, যেমন গড়, যোগফল ইত্যাদি বের করা।
+
+```{r}
+# গড় Score বের করা
+summary_data <- summarize(data, Average_Score = mean(Score))
+print(summary_data)
+```

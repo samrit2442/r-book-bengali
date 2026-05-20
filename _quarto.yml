@@ -7,9 +7,13 @@ book:
   date: "2024-03-20"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - chapters/intro.qmd
+    - chapters/01-basics.qmd
+    - chapters/02-data-structures.qmd
+    - chapters/03-data-manipulation.qmd
+    - chapters/04-data-visualization.qmd
+    - chapters/summary.qmd
+    - chapters/references.qmd
 
 bibliography: references.bib
 
