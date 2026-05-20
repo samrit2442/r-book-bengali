@@ -64,7 +64,7 @@
     "href": "chapters/02-data-structures.html#লসট-lists",
     "title": "3  ডেটা স্ট্রাকচার",
     "section": "3.2 লিস্ট (Lists)",
-    "text": "3.2 লিস্ট (Lists)\nলিস্ট হল বিভিন্ন প্রকারের ডেটার সংগ্রহ। একটি লিস্টের মধ্যে সংখ্যা, স্ট্রিং, এমনকী অন্যান্য ভেক্টর বা লিস্টও থাকতে পারে।\n\nmy_list &lt;- list(name = \"Rahim\", age = 25, scores = c(80, 85, 90))\nprint(my_list)\n\n$name\n[1] \"Rahim\"\n\n$age\n[1] 25\n\n$scores\n[1] 80 85 90",
+    "text": "3.2 লিস্ট (Lists)\nলিস্ট হল বিভিন্ন প্রকারের ডেটার সংগ্রহ। একটি লিস্টের মধ্যে সংখ্যা, স্ট্রিং, এমনকী অন্যান্য ভেক্টর বা লিস্টও থাকতে পারে।\n\nmy_list &lt;- list(name = \"Rahul\", age = 25, scores = c(80, 85, 90))\nprint(my_list)\n\n$name\n[1] \"Rahul\"\n\n$age\n[1] 25\n\n$scores\n[1] 80 85 90",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
     ]
@@ -84,7 +84,7 @@
     "href": "chapters/02-data-structures.html#ডট-ফরম-data-frames",
     "title": "3  ডেটা স্ট্রাকচার",
     "section": "3.4 ডেটা ফ্রেম (Data Frames)",
-    "text": "3.4 ডেটা ফ্রেম (Data Frames)\nডেটা সায়েন্সে ডেটা ফ্রেম সবচেয়ে বেশি ব্যবহৃত হয়। এটি অনেকটা এক্সেল টেবিলের মতো, যেখানে বিভিন্ন কলামে বিভিন্ন ধরনের ডেটা থাকতে পারে।\n\ndf &lt;- data.frame(\n  ID = c(1, 2, 3),\n  Name = c(\"Karim\", \"Rahim\", \"Salma\"),\n  Age = c(22, 25, 23)\n)\nprint(df)\n\n  ID  Name Age\n1  1 Karim  22\n2  2 Rahim  25\n3  3 Salma  23",
+    "text": "3.4 ডেটা ফ্রেম (Data Frames)\nডেটা সায়েন্সে ডেটা ফ্রেম সবচেয়ে বেশি ব্যবহৃত হয়। এটি অনেকটা এক্সেল টেবিলের মতো, যেখানে বিভিন্ন কলামে বিভিন্ন ধরনের ডেটা থাকতে পারে।\n\ndf &lt;- data.frame(\n  ID = c(1, 2, 3),\n  Name = c(\"Nibiru\", \"Sourav\", \"Irabati\"),\n  Age = c(22, 25, 23)\n)\nprint(df)\n\n  ID    Name Age\n1  1  Nibiru  22\n2  2  Sourav  25\n3  3 Irabati  23",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>ডেটা স্ট্রাকচার</span>"
     ]
