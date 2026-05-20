@@ -21,7 +21,7 @@ print(fruits)
 লিস্ট হল বিভিন্ন প্রকারের ডেটার সংগ্রহ। একটি লিস্টের মধ্যে সংখ্যা, স্ট্রিং, এমনকী অন্যান্য ভেক্টর বা লিস্টও থাকতে পারে।
 
 ```{r}
-my_list <- list(name = "Rahim", age = 25, scores = c(80, 85, 90))
+my_list <- list(name = "Rahul", age = 25, scores = c(80, 85, 90))
 print(my_list)
 ```
 
